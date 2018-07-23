@@ -1,16 +1,16 @@
-
+//savingaccount class
 public class SavingAccount 
 {
 	private static int AccountNumber;
 	private String Name;
 	private double Balance;
 	
-	public void Deposit(double Amount)
+	public void Deposit(double Amount)//member function for deposit
 	{
 		Balance+=Amount;
 	}
 	
-	public void Withdraw(double Amount)
+	public void Withdraw(double Amount)//member function for withdraw
 	{
 		double balance=Balance;
 		balance-=Amount;
@@ -20,33 +20,40 @@ public class SavingAccount
 		}
 	}
 
-	public SavingAccount() {
+	public SavingAccount()//constructor
+	{
 		super();
 		Name = null;
 		Balance = 0;
 	}
 
-	public static int getAccountNumber() {
+	public static int getAccountNumber()//getter
+	{
 		return AccountNumber;
 	}
 
-	public static void setAccountNumber() {
+	public static void setAccountNumber()//setter
+	{
 		AccountNumber += 1;
 	}
 
-	public String getName() {
+	public String getName()//getter
+	{
 		return Name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name)//setter
+	{
 		Name = name;
 	}
 
-	public double getBalance() {
+	public double getBalance() //getter 
+	{
 		return Balance;
 	}
 
-	public void setBalance(double balance) {
+	public void setBalance(double balance)//setter
+	{
 		Balance = balance;
 	}
 	

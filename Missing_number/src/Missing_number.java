@@ -1,24 +1,27 @@
+//main function to find missing number
 import java.util.Scanner;
 
-public class Missing_number {
+public class Missing_number 
+{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc= new Scanner(System.in);
+	public static void main(String[] args)
+	{
+		
+		Scanner scanner= new Scanner(System.in);
 		System.out.println("Enter the number of element");
-		int n= sc.nextInt();
-		int array[]=new int[n];
+		int number= scanner.nextInt();
+		int array[]=new int[number];//array initialization
 		System.out.println("Enter the elements of array: ");
-		for(int i=0;i<n;i++ )
+		for(int i=0;i<number;i++ )
 		{
-			array[i]=sc.nextInt();
+			array[i]=scanner.nextInt();//entering array element
 		}
-		int total= (n+1)*(n+2)/2;
-		for(int j=0;j<n;j++)
+		int total= (number+1)*(number+2)/2;//calculate total
+		for(int j=0;j<number;j++)
 		{
-			total-=array[j];
+			total-=array[j];//finding misiing number
 		}
-		System.out.println("The missing number is: "+total);
+		System.out.println("The missing number is: "+total);//displaying missing number
 	}
 
 }
