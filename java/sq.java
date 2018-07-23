@@ -1,19 +1,23 @@
+//main function Square of number
 import java.util.Scanner;
-public class sq{
-	private static Scanner sc;
+public class Square
+{
+	private static Scanner scanner;
 	public static void main(String []args)
 	{
-		int n,square;
-		Scanner sc;
-		sc=new Scanner(System.in);
+		int number,square;
+		Scanner scanner;
+		scanner=new Scanner(System.in);
+		
 		System.out.println("Please enter the number:");
-		n=sc.nextInt();
-		square=calsquare(n);
-		System.out.println("\n The square of a given number is " + n + " = " + square);
+		number=sc.nextInt();//input number to be square
+		
+		square=calsquare(number);//invoking square function
+		System.out.println("\n The square of a given number is " + number + " = " + square);//output result
 		
 	}
-	public static int calsquare(int num)
+	public static int calsquare(int num)//Square function 
 	{
-		return num * num;
+		return num * num;//return 
 	}
 }

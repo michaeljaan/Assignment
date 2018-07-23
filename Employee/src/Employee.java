@@ -1,46 +1,50 @@
-
-public class Employee {
-	private final int id=101;
-	private String name;
-	private double monthlyBasic;
+//employee class
+public class Employee
+{
+	private final int id=101;//employee ID(attributes)
+	private String name;//Employee Name(attributes)
+	private double monthlyBasic;//(attributes)
+	
 	double MonthlyGrossSalary;
 	double MonthlyDeduction;
 	double MonthlyTakeHome;
 	static double pf;
 	
 		
-	public int getId() {
+	public int getId()//getter
+	{
 		return id;
 	}
 
 
-	public String getName() {
+	public String getName()//getter
+	{
 		return name;
 	}
 
 
-	public void setName(String name) {
+	public void setName(String name)//getter
+	{
 		this.name = name;
 	}
-
 	
-	public double getMonthlyBasic() {
+	public double getMonthlyBasic() //getter
+	{
 		return monthlyBasic;
 	}
 
-
-	public void setMonthlyBasic(double monthlyBasics) {
+	public void setMonthlyBasic(double monthlyBasics)//setter
+	{
 		this.monthlyBasic = monthlyBasics;
 	}
 
-
-	double getAnnualBasic()
+	double getAnnualBasic()//calculte Annual basic
 	{
 		double annualBasics= monthlyBasic * 12;
 		return annualBasics;
 	}
 	
-	public double getMonthlyGrossSalary()
+	public double getMonthlyGrossSalary()//calculate Monthly Gross
 	{
 		double hra= monthlyBasic*0.5;
 		double medical=1250, conveyance=800;
@@ -48,13 +52,13 @@ public class Employee {
 		return MonthlyGrossSalary;
 	}
 	
-	double getAnnualGrossSalary()
+	double getAnnualGrossSalary()//calculate annual Gross
 	{
 		double AnnualGrossSalary = 12 * MonthlyGrossSalary;
 		return AnnualGrossSalary;
 	}
 	
-	double getMonthlyDeduction()
+	double getMonthlyDeduction()//calculate monthly Deduction
 	{
 		double pf,esic,profTax;
 		if(monthlyBasic > 6500)
@@ -85,23 +89,25 @@ public class Employee {
 		return MonthlyDeduction;
 	}
 	
-	double getMonthlyTakeHome()
+	double getMonthlyTakeHome()//calculate monthly take_home
 	{
 		MonthlyTakeHome= MonthlyGrossSalary-MonthlyDeduction;
 		return MonthlyTakeHome;
 	}
 	
-	double getAnnualTakeHome()
+	double getAnnualTakeHome()//calculate Annual take home
 	{
 		double AnnualTakeHome= MonthlyTakeHome*12;
 		return AnnualTakeHome;
 	}
 	
-	public static double getPf() {
+	public static double getPf()//getter 
+	{
 		return pf;
 	}
-	public static void setPf(double pf) {
+	
+	public static void setPf(double pf)//setter
+	{
 		Employee.pf = pf;
 	}
-	
 }
