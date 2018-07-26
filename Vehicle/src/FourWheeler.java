@@ -1,9 +1,8 @@
-//Four wheeler class
-//Child class
-public class FourWheeler extends Vehicle 
+//class
+public class FourWheeler implements Vehicles
 {
-	public void start()//over ride function
+	public void start()
 	{
-		System.out.println("Four Wheeler has started.");
+		System.out.println("Start the 4 wheeler.");
 	}
 }
