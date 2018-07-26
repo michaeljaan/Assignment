@@ -1,5 +1,5 @@
 package in.co.cg.test;
-
+//class defning various test cases of division
 import static org.junit.Assert.*;
 
 import org.junit.Assert;
@@ -36,7 +36,7 @@ public class CalculatorDiv
 		int ans=Div.div(-25,5); 
 		Assert.assertEquals(-5, ans);
 	}
-	@Test(expected = java.lang.ArithmeticException.class)
+	@Test(expected = java.lang.ArithmeticException.class)//exception case
 	public void DivByZeroes()
 	{
 		Calculator Div=new Calculator();
