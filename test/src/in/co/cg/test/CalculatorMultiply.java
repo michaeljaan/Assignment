@@ -1,5 +1,5 @@
 package in.co.cg.test;
-
+//addition class defining various test cases
 import static org.junit.Assert.*;
 
 import org.junit.Assert;
