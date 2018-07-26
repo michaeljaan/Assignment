@@ -1,4 +1,4 @@
-
+//main function to remove space in string
 import java.util.*;
 
 class RemoveSpace 
@@ -7,7 +7,7 @@ class RemoveSpace
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the String with Spaces");
-		String input = sc.nextLine();
+		String input = sc.nextLine();//input string
 		StringBuilder str = new StringBuilder();
 		int flag = 0;
 		
@@ -31,7 +31,7 @@ class RemoveSpace
 
 		}
 
-		System.out.println("Sentence without spaces = " + str.toString());
+		System.out.println("Sentence without spaces = " + str.toString());//output string
 
 	}
 }
