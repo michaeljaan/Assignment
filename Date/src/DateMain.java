@@ -1,7 +1,7 @@
-//main function
+//main function to calculate the age
 import java.util.Scanner;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import java.text.SimpleDateFormat;//function to modify date format
+import java.util.Calendar;//function to import calendar
 
 public class DateMain
 {
@@ -13,7 +13,7 @@ public class DateMain
 		scanner.close();
 		
 		SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
-		Calendar dob=Calendar.getInstance();
+		Calendar dob=Calendar.getInstance();//create object
 		dob.setTime(sdf.parse(input));
 		
 		Date Age=new Date(dob);//object creation
