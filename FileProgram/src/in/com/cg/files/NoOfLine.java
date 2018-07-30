@@ -1,5 +1,5 @@
 package in.com.cg.files;
-import java.io.BufferedReader;
+import java.io.BufferedReader;//import packages
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,21 +10,21 @@ public class NoOfLine {
 
 	public static void main(String[] args) throws IOException
 	{
-		int lineCount =0;
+		int lineCount =0;//initialize line counter
 		
-		BufferedReader reader=new BufferedReader(new FileReader("P:/Users/nagasr/Desktop/new.txt"));
+		BufferedReader reader=new BufferedReader(new FileReader("P:/Users/nagasr/Desktop/new.txt"));//path of the file
 		while(true)
 		{
-			String line=reader.readLine();
-			if(line==null)
+			String line=reader.readLine();//read the line from file
+			if(line==null)//if there is no more line present
 			{
 				break;
 			}
-				lineCount++;
+				lineCount++;//increment line counter
 			
 		}
-		reader.close();
-		System.out.println("Line Count= "+lineCount);
+		reader.close();//close file
+		System.out.println("Line Count= "+lineCount);//display file
 	}
 
 }
