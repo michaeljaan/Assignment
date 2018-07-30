@@ -1,5 +1,5 @@
 package in.com.cg.files;
-import java.io.File;
+import java.io.File;//import file package
 public class FileChecker {
 
 	public static void main(String[] args)
